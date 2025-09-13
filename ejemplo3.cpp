@@ -84,4 +84,18 @@ int main()
         std::cout << "Contador: " << counter << std::endl;
         counter++;
     }
+    // do while
+    do
+    {
+        std::cout << "Do while: Desea salir? oprima (q): ";
+        std::cin >> userInput;
+        std::cout << "contador: " << counter << std::endl;
+        counter++;
+        if (counter > 10)
+        {
+            std::cout << "Se ha superado el maximo de intentos" << std::endl;
+            break;
+        }
+    } while (userInput != 'q');
+    return 0;
 }
